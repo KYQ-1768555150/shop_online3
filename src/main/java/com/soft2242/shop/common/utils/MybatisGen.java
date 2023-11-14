@@ -18,7 +18,6 @@ public class MybatisGen {
                 .concat(File.separator).concat("java").concat(File.separator).concat("com").concat(File.separator).concat("soft2242").concat(File.separator).concat("shop").concat(File.separator);
         String pathXml = System.getProperty("user.dir").concat(File.separator).concat("src").concat(File.separator).concat("main")
                 .concat(File.separator).concat("resources").concat(File.separator).concat("mapper");
-
         Map<OutputFile, String> outputFileStringMap = new HashMap<>();
         outputFileStringMap.put(OutputFile.controller, path + "controller");
         outputFileStringMap.put(OutputFile.service, path + "service");
@@ -26,7 +25,7 @@ public class MybatisGen {
         outputFileStringMap.put(OutputFile.entity, path + "entity");
         outputFileStringMap.put(OutputFile.mapper, path + "mapper");
         outputFileStringMap.put(OutputFile.xml, pathXml);
-        FastAutoGenerator.create("jdbc:mysql://localhost:3306/shop_online", "root", "root")
+        FastAutoGenerator.create("jdbc:mysql://localhost:3306/shop_online", "root", "123456")
                 .globalConfig(builder -> {
                     builder.author("ycshang").enableSwagger(); // 设置作者// 开启 swagger 模式
 

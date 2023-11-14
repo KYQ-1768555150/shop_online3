@@ -21,11 +21,11 @@ public class PageResult<T> implements Serializable {
     @Schema(description = "列表数据")
     private List<T> list;
 
-    public PageResult(int counts, int pageSize, int page, int pages, List<T> list) {
-        this.counts = counts;
+    public PageResult(long counts, int pageSize, int page, long pages, List<T> list) {
+        this.counts = (int)counts;
         this.pageSize = pageSize;
         this.page = page;
-        this.pages = pages;
+        this.pages = (int)pages;
         this.list = list;
     }
 }

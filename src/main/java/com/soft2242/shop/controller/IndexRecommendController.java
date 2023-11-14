@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2023-11-10
  */
 @RestController
-@RequestMapping("/shop/indexRecommend")
+@RequestMapping("home")
 public class IndexRecommendController {
 
 }

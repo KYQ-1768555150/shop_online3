@@ -1,9 +1,11 @@
 package com.soft2242.shop.service.impl;
 
+import com.soft2242.shop.entity.Goods;
 import com.soft2242.shop.entity.GoodsDetail;
 import com.soft2242.shop.mapper.GoodsDetailMapper;
 import com.soft2242.shop.service.GoodsDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.soft2242.shop.vo.GoodsVO;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,5 +18,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class GoodsDetailServiceImpl extends ServiceImpl<GoodsDetailMapper, GoodsDetail> implements GoodsDetailService {
+
 
 }

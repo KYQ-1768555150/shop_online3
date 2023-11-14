@@ -19,15 +19,15 @@ public class APIConstant {
     /**
      * 默认头像
      */
-    public static String DEFAULT_AVATAR = "默认头像链接";
+    public static String DEFAULT_AVATAR = "https://ycshang123.oss-cn-hangzhou.aliyuncs.com/cover%20%282%29.png";
     /**
      * APP_ID
      */
-    public static String APP_ID = "自己创建小程序的APP_ID";
+    public static String APP_ID = "wx67c7f578c760e423";
     /**
      * APP_SECRET
      */
-    public static String APP_SECRET = "自己创建小程序的APP_SECRECT";
+    public static String APP_SECRET = "38d17651c776c3b7ddf42f50e9fd4e3f";
     /**
      * 微信调用api接口返回错误code
      */
