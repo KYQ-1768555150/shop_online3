@@ -1,6 +1,6 @@
-package com.yzw.shop_online.vo;
+package com.soft2242.shop.vo;
 
-import com.yzw.shop_online.query.OrderGoodsQuery;
+import com.soft2242.shop.query.OrderGoodsQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;

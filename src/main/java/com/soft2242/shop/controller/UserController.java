@@ -17,6 +17,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -37,6 +38,7 @@ import static com.soft2242.shop.common.utils.ObtainUserIdUtils.getUserId;
 @RestController
 @RequestMapping("user")
 @AllArgsConstructor
+@Slf4j
 public class UserController {
 
     private final UserService userService;
@@ -44,6 +46,7 @@ public class UserController {
     @Operation(summary = "微信登录")
     @PostMapping("login/wxMin")
     public Result<LoginResultVO> wxLogin(@RequestBody @Validated UserLoginQuery query) {
+        log.info(query.toString());
         LoginResultVO userVO = userService.login(query);
         return Result.ok(userVO);
     }
@@ -69,7 +72,7 @@ public class UserController {
         String uploadFileName = userService.editUserAvatar(userId, file);
         return Result.ok(uploadFileName);
     }
-    @Tag(name = "首页管理")
+/*    @Tag(name = "首页管理")
     @RestController
     @RequestMapping("home")
     @AllArgsConstructor
@@ -101,5 +104,5 @@ public class UserController {
 
         }
 
-    }
+    }*/
 }

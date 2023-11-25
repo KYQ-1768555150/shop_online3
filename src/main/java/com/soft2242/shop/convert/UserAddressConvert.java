@@ -1,7 +1,7 @@
-package com.yzw.shop_online.common.convert;
+package com.soft2242.shop.convert;
 
-import com.yzw.shop_online.entity.UserShippingAddress;
-import com.yzw.shop_online.vo.UserAddressVO;
+import com.soft2242.shop.entity.UserShippingAddress;
+import com.soft2242.shop.vo.UserAddressVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

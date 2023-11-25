@@ -1,4 +1,4 @@
-package com.yzw.shop_online.common.enums;
+package com.soft2242.shop.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

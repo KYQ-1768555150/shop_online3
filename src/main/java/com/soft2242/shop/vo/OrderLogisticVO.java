@@ -1,4 +1,4 @@
-package com.yzw.shop_online.vo;
+package com.soft2242.shop.vo;
 
 import com.alibaba.fastjson2.JSONObject;
 import io.swagger.v3.oas.annotations.media.Schema;

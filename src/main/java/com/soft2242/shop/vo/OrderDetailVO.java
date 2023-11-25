@@ -1,9 +1,9 @@
-package com.yzw.shop_online.vo;
+package com.soft2242.shop.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.yzw.shop_online.common.utils.DateUtils;
-import com.yzw.shop_online.entity.UserOrderGoods;
+import com.soft2242.shop.common.utils.DateUtils;
+import com.soft2242.shop.entity.UserOrderGoods;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
