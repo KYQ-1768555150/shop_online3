@@ -75,7 +75,7 @@ public class UserOrderController {
         SubmitOrderVO preNowOrderDetail = userOrderService.getPreNowOrderDetail(query);
         return Result.ok(preNowOrderDetail);
     }
-    @Operation(summary = "填写订单 - 获取再次购买订单")
+    @Operation(summary = "填写订单与获取再次购买订单")
     @GetMapping("/repurchase")
     public Result<SubmitOrderVO> getRepurchaseOrderDetail(@RequestParam Integer id) {
         if (id == null) {
